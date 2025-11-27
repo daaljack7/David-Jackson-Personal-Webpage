@@ -393,6 +393,81 @@ section {
 
 .location {
     color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.athletic-achievements {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--border-color);
+}
+
+.athletic-achievements h4 {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.athletic-achievements ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.athletic-achievements li {
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    color: var(--text-secondary);
+}
+
+.athletic-achievements li::before {
+    content: '🎾';
+    position: absolute;
+    left: 0;
+}
+
+/* Interests Section */
+.interests {
+    background-color: var(--bg-white);
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.interest-card {
+    background-color: var(--bg-light);
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.interest-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.interest-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.interest-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.interest-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 1rem;
 }
 
 /* Contact Section */
