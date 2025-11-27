@@ -467,11 +467,29 @@ section {
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    overflow: hidden;
 }
 
 .interest-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.interest-image {
+    margin: -2.5rem -2rem 1.5rem -2rem;
+    overflow: hidden;
+    height: 200px;
+}
+
+.interest-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.interest-card:hover .interest-image img {
+    transform: scale(1.05);
 }
 
 .interest-icon {
