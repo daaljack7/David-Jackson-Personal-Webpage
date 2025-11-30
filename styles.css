@@ -562,6 +562,26 @@ section {
     font-size: 1rem;
 }
 
+.project-link {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--border-color);
+}
+
+.project-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.project-link a:hover {
+    color: var(--secondary-color);
+    transform: translateX(5px);
+}
+
 /* Contact Section */
 .contact {
     background-color: var(--bg-light);
