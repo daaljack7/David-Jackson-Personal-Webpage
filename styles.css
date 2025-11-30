@@ -88,13 +88,50 @@ body {
     transition: 0.3s;
 }
 
-/* Hero Section */
+/* Hero Section - DEFAULT (Current) */
 .hero {
     background: linear-gradient(rgba(37, 99, 235, 0.85), rgba(30, 64, 175, 0.85)), url('images/silconvalleybackdrop.png') center/cover no-repeat;
     color: white;
     padding: 150px 0 100px;
     margin-top: 70px;
     position: relative;
+}
+
+/* OPTION 1: Lighter Overlay - More Image Visible */
+.hero.option1 {
+    background: linear-gradient(rgba(37, 99, 235, 0.5), rgba(30, 64, 175, 0.5)), url('images/silconvalleybackdrop.png') center/cover no-repeat;
+}
+
+/* OPTION 2: Top-to-Bottom Fade - Clear at Top, Darker at Bottom */
+.hero.option2 {
+    background: linear-gradient(rgba(37, 99, 235, 0.3) 0%, rgba(30, 64, 175, 0.7) 100%), url('images/silconvalleybackdrop.png') center/cover no-repeat;
+}
+
+/* OPTION 3: Dark Edges, Clear Center */
+.hero.option3 {
+    background: radial-gradient(circle at center, rgba(37, 99, 235, 0.4), rgba(30, 64, 175, 0.8)), url('images/silconvalleybackdrop.png') center/cover no-repeat;
+}
+
+/* OPTION 4: Better Positioning with Medium Overlay */
+.hero.option4 {
+    background: linear-gradient(rgba(37, 99, 235, 0.6), rgba(30, 64, 175, 0.6)), url('images/silconvalleybackdrop.png') center top/cover no-repeat;
+    padding: 180px 0 120px;
+}
+
+/* OPTION 5: Minimal Overlay - Maximum Image Visibility */
+.hero.option5 {
+    background: linear-gradient(rgba(37, 99, 235, 0.3), rgba(30, 64, 175, 0.4)), url('images/silconvalleybackdrop.png') center/cover no-repeat;
+}
+.hero.option5 .hero-title {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.hero.option5 .btn {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* OPTION 6: Custom Positioning with Light Overlay */
+.hero.option6 {
+    background: linear-gradient(rgba(37, 99, 235, 0.55), rgba(30, 64, 175, 0.55)), url('images/silconvalleybackdrop.png') center 30%/cover no-repeat;
 }
 
 .hero-content {
