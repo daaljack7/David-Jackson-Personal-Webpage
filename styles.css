@@ -189,15 +189,16 @@ section {
 /* About Section */
 .about {
     background-color: var(--bg-light);
+    padding: 60px 0;
 }
 
 .about-content {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 3rem;
-    align-items: start;
+    grid-template-columns: 250px 1fr;
+    gap: 2.5rem;
+    align-items: center;
 }
 
 .about-image {
@@ -219,7 +220,7 @@ section {
 
 .about-text p {
     font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     color: var(--text-secondary);
     line-height: 1.8;
 }
